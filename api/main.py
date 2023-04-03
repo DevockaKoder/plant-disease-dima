@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 from fastapi import FastAPI, File, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 import numpy as np
 from io import BytesIO
@@ -54,3 +55,6 @@ async def predict(
         'confidence': float(confidence),
     }
 
+
+if __name__ == "__main__":
+    uvicorn.run(app, host='localhost', port=8000)

@@ -21,7 +21,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-img = open(".\\healthy.jpg", 'rb')
+img = open("./healthy.jpg")
 
 MODEL = tf.keras.models.load_model(".\\model")
 

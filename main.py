@@ -11,7 +11,7 @@ app = FastAPI()
 
 img = open("./healthy.jpg")
 
-MODEL = models.load_model("model/saved_model.pb")
+MODEL = models.load_model("model/saved_model")
 
 CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 

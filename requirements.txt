@@ -1,5 +1,5 @@
 tensorflow==2.5.0
-fastapi
+--no-cache fastapi
 uvicorn
 python-multipart
 pillow

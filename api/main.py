@@ -21,10 +21,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-PARENT_DIR = os.path.dirname(Path(__file__).parent)
-img = open(PARENT_DIR + "\\healthy.jpg", 'rb')
+img = open(".\\healthy.jpg", 'rb')
 
-MODEL = tf.keras.models.load_model(PARENT_DIR + "\\model")
+MODEL = tf.keras.models.load_model(".\\model")
 
 CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 

@@ -6,5 +6,4 @@ pillow
 tensorflow-serving-api
 matplotlib
 numpy
-typing-extensions
 httpx

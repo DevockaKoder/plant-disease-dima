@@ -1,3 +1,5 @@
+import os
+from pathlib import Path
 from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
@@ -19,7 +21,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL = tf.keras.models.load_model("../model")
+img = open("./healthy.jpg")
+
+MODEL = tf.keras.models.load_model("./model")
 
 CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 

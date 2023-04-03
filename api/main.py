@@ -23,7 +23,7 @@ app.add_middleware(
 
 img = open("./healthy.jpg")
 
-MODEL = tf.keras.models.load_model(".\\model")
+MODEL = tf.keras.models.load_model("./model")
 
 CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 
